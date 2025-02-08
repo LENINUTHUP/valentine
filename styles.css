@@ -72,14 +72,9 @@ button {
     to { opacity: 1; }
 }
 
-.animation {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.8);
-    justify-content: center;
-    align-items: center;
+.kiss-animation img {
+    max-width: 100%; /* Make the GIF responsive */
+    height: auto;    /* Maintain aspect ratio */
+    display: block;  /* Center the GIF */
+    margin: 0 auto;  /* Center the GIF horizontally */
 }
