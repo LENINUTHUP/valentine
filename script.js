@@ -28,19 +28,16 @@ document.getElementById('noButton').addEventListener('click', function() {
     }
 });
 
-document.getElementById('yesButton'). addEventListener('click', function() {
-    document.getElementById('animation').style.display = 'flex';
+document.getElementById('yesButton').addEventListener('click', function() {
+    document.getElementById('animation').style.display = 'flex'; // Show the animation container
     document.getElementById('animation').innerHTML = `
         <div class="kiss-animation">
-            <img src="kiss-animation.webm" alt="Kissing Animation" />
-            <div class="love-symbols">
-                <span class="heart">❤️</span>
-                <span class="cupid">💘</span>
-                <span class="sparkle">✨</span>
-            </div>
+            <video autoplay loop muted>
+                <source src="kiss-animation.webm" type="video/webm">
+            </video>
         </div>
     `;
     setTimeout(() => {
-        document.getElementById('animation').style.display = 'none';
-    }, 8000); // Animation lasts for 5 seconds
+        document.getElementById('animation').style.display = 'none'; // Hide after 5 seconds
+    }, 5000); // Animation lasts for 5 seconds
 });
