@@ -33,7 +33,7 @@ document.getElementById('yesButton').addEventListener('click', function() {
     document.getElementById('animation').innerHTML = `
         <div class="kiss-animation">
             <video autoplay loop muted>
-                <source src="kiss-animation.webm" type="video/webm">
+                <source src="love-romance.gif" type="gif">
             </video>
         </div>
     `;
