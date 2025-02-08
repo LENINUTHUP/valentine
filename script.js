@@ -28,15 +28,15 @@ document.getElementById('noButton').addEventListener('click', function() {
     }
 });
 
-document.getElementById('yesButton'). addEventListener('click', function() {
-    document.getElementById('animation').style.display = 'flex';
+document.getElementById('yesButton').addEventListener('click', function() {
+    document.getElementById('animation').style.display = 'flex'; // Show the animation container
     document.getElementById('animation').innerHTML = `
         <div class="kiss-animation">
             <img src="love-romance.gif" alt="Kissing Animation" />
-         
+            
         </div>
     `;
     setTimeout(() => {
-        document.getElementById('animation').style.display = 'none';
-    }, 8000); // Animation lasts for 5 seconds
+        document.getElementById('animation').style.display = 'none'; // Hide after 5 seconds
+    }, 9000); // Animation lasts for 9 seconds
 });
