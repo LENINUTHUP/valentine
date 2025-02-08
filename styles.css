@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8e1e1; /* Soft pastel background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.love-letter img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.message {
+    display: none;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.message h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2em;
+    color: #d50000; /* Romantic red */
+    animation: fadeIn 1s ease forwards;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#yesButton {
+    background-color: #ff4d4d; /* Romantic red */
+    color: white;
+}
+
+#noButton {
+    background-color: #b0c4de; /* Light grey/blue */
+    color: black;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animation {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    justify-content: center;
+    align-items: center;
+}
